@@ -1,6 +1,7 @@
 # leleo-home-page 个人主页
 
 ## 目录
+
 - [项目简介](#项目简介)
 - [功能特性](#功能特性)  
 - [演示地址](#演示地址)
@@ -10,7 +11,6 @@
   - [Vercel在线部署](#vercel在线部署)
   - [CloudFlare Pages 在线部署](#cloudflare-pages-在线部署)
 - [修改配置](#修改配置)
-
 
 ## 项目简介
 
@@ -90,7 +90,7 @@ npm run dev
 > 无需服务器，对站长友好(需要有CloudFlare以及Github账号)
 
 1. Fork本项目到自己的账号下
-   
+
 2. 登录CloudFlare并点击左侧栏目中"计算(workers)"底下的"Workers 和 Pages"
 
 ![Workers页](./img/leleo-home-page/IMG_20250813_122124.jpg)
@@ -128,21 +128,21 @@ npm run dev
 #### vercel部署
 
 > (1). 首先还是打开vercel中本项目主面板，然后依次点击`Settings`、`Environments`、`Production`
-![Vercel控制面板](./img/leleo-home-page/1737624788108.png)
+> ![Vercel控制面板](./img/leleo-home-page/1737624788108.png)
 
 > (2). 然后下翻点击`Add Environment Variable`按钮，要求填入`Key`值为`VITE_CONFIG`,`Value`值如[环境变量值](./img/env.md)所示，全部复制粘贴即可（有点多），根据个人情况自定义修改，配置说明同方法1。
-![Vercel控制面板](./img/leleo-home-page/1737625015472.png)
+> ![Vercel控制面板](./img/leleo-home-page/1737625015472.png)
 
 > (3). 回到项目主面板，依次点击`Project`、`Build Logs`，进入新页面后再找到`Redeploy`。最后等待重新部署完成即可。
-![Vercel控制面板](./img/leleo-home-page/1737626184576.png)
-![Vercel控制面板](./img/leleo-home-page/1737626397809.png)
+> ![Vercel控制面板](./img/leleo-home-page/1737626184576.png)
+> ![Vercel控制面板](./img/leleo-home-page/1737626397809.png)
 
 #### CloudFlare部署
 
 > (1). 到你的Pages项目，点击"设置"，找到"变量和机密"点击右侧"添加"
-![设置页](./img/leleo-home-page/IMG_20250813_125718.jpg)
+> ![设置页](./img/leleo-home-page/IMG_20250813_125718.jpg)
 
 > (2). 要求填入"变量名称"为`VITE_CONFIG`,"值"如[环境变量值](./img/env.md)所示，全部复制粘贴即可（有点多），根据个人情况自定义修改，配置说明同方法1
 
 > (3). 点击"部署"，找到左侧带绿条的那个点击右侧三个点"重试部署" 等待部署完成即可
-![重试部署](./img/leleo-home-page/IMG_20250813_131021.jpg)
+> ![重试部署](./img/leleo-home-page/IMG_20250813_131021.jpg)

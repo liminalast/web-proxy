@@ -1,14 +1,14 @@
 const config = {
 	//网页元数据
 	metaData: {
-		title: 'Leleo的个人主页🎉',
-		description: '欢迎来到Leleo的奇妙世界！',
-		keywords: 'Leleo,leleo,个人主页,个人网站',
+		title: 'liminal的个人主页🎉',
+		description: '欢迎来到liminal的世界！',
+		keywords: 'liminal,个人主页,个人网站',
 		icon: '/favicon.ico'   //网页图标，支持外链
 	},
 
 	avatar: "/img/avatar.jpg", // 头像
-	welcometitle: "Hi, I'm Leleo", // 标题
+	welcometitle: "Hi, I'm liminal", // 标题
 
 	// 颜色配置
 	color: {
@@ -47,34 +47,31 @@ const config = {
 
 	//极坐标图数据
 	polarChart: {
-		skills: ['Vue.js', 'React', 'JavaScript', 'Node', 'Java', 'Python', 'linux', 'Docker', 'MySQL', 'MongoDB', 'AWS'],
-		skillPoints: [85, 78, 88, 90, 80, 78, 85, 65, 82, 78, 70],
-	},
+    skills: ['快乐', '摸鱼', '治愈力', '随性', '共情', '懒散', '温柔', '好奇心', '文艺', '猫缘', '自由'],
+    skillPoints: [99, 95, 88, 92, 85, 90, 88, 80, 82, 97, 94],
+},
 
 	//社交按钮
 	socialPlatformIcons: [
-		{ icon: "mdi-github", link: "https://www.github.com/leleo886" },
-		{ icon: "mdi-email", link: "mailto:leleo886@foxmail.com" },
-		{ icon: "mdi-qqchat", link: "https://im.qq.com/" },
-		{ icon: "mdi-wechat", link: "https://wx.qq.com/" },
-		{ icon: "mdi-youtube", link: "https://www.youtube.com" },
-		{ icon: "mdi-facebook", link: "https://www.facebook.com" }
+		{ icon: "mdi-github", link: "https://github.com/liminalast" },
+    	{ icon: "mdi-qqchat", link: "https://wpa.qq.com/msgrd?v=3&uin=1158429178&site=qq&menu=yes" },
+    	{ icon: "mdi-wechat", link: "javascript:void(0)", wechat: "z1158429178" },
 	],
 
 	//打字机
 	typeWriterStrings: [
-		"如果你看到了这行字，说明我已经成功吸引到了你的注意力。",
-		"顶峰的少年，给了你所有细节，你却说我不是迪迦，给不了你想要的光。",
-		"心简单，世界就简单，幸福才会生长；心自由，生活就自由，到哪都有快乐。",
-		"生命太短，没有时间留给遗憾，若不是终点，请微笑一直向前。"
-	],
+    "我只想轻松快乐的活着。",
+    "人间值得，但不必太用力。",
+    "慢慢来，比较快。",
+    "愿你所求皆如愿，所行皆坦途。"
+],
 
 	//音乐播放配置，采用MetingJS Api(https://github.com/metowolf/MetingJS)
 	musicPlayer: {
-		server: 'netease',  //服务提供商 --网易云音乐
-		type: 'playlist',   //歌单类型
-		id: '2028178887'  //歌单id ---> music.163.com/#/playlist?id=2028178887
-	},
+    server: 'tencent',  
+    type: 'playlist',
+    id: '3137258680'    
+},
 
 	//壁纸数据 -----可以将壁纸文件上传到图床获取网络直链。若想调用api，请前往脚本自行修改逻辑
 	wallpaper: {
@@ -102,14 +99,14 @@ const config = {
 		],
 		video: [
 			{
-				"title": "尼尔：机械纪元 团队",
-				"preview": "/img/wallpaper/dynamic/尼尔：机械纪元 团队/Nier-Automata-Team-pre.webm",
-				"url": "/img/wallpaper/dynamic/尼尔：机械纪元 团队/Nier-Automata-Team.webm"
+				"title": "1",
+				"preview": "/img/wallpaper/dynamic/1/动态-全景镜头 - pre.webm",
+				"url": "/img/wallpaper/dynamic/1/动态-全景镜头"
 			},
 			{
-				"title": "向往航天的女孩",
-				"preview": "/img/wallpaper/dynamic/向往航天的女孩/Toy-Aeroplane-pre.webm",
-				"url": "/img/wallpaper/dynamic/向往航天的女孩/Toy-Aeroplane.webm"
+				"title": "2",
+				"preview": "/img/wallpaper/dynamic/向往航天的女孩/22 - pre.webm",
+				"url": "/img/wallpaper/dynamic/向往航天的女孩/22.webm"
 			},
 			{
 				"title": "世界很温柔《龙族》上杉绘梨衣",
@@ -137,18 +134,18 @@ const config = {
 	},
 
 	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
-	projectcards: [
-		{ go: "🚀 前往", img: "/img/sunshine.jpg", title: "Project 1", subtitle: "1,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🗂️ 前往", img: "/img/sunshine.jpg", title: "Project 2", subtitle: "2,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "📝 前往", img: "/img/sunshine.jpg", title: "Project 3", subtitle: "3,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "👍 前往", img: "/img/sunshine.jpg", title: "Project 4", subtitle: "4,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🗃 前往", img: "/img/sunshine.jpg", title: "Project 5", subtitle: "5,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🎨 前往", img: "/img/sunshine.jpg", title: "Project 6", subtitle: "6,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "💍 前往", img: "/img/sunshine.jpg", title: "Project 7", subtitle: "7,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🔍 前往", img: "/img/sunshine.jpg", title: "Project 8", subtitle: "8,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-	],
+projectcards: [
+    { go: "🚀 前往", img: "/img/sunshine.jpg", title: "GitHub", subtitle: "代码托管平台", text: "全球最大的开源社区，存放你的每一行代码。", url: "https://github.com", show: false },
+    { go: "🎨 前往", img: "/img/sunshine.jpg", title: "Figma", subtitle: "在线设计工具", text: "简洁强大的 UI 设计工具，协作设计从未如此简单。", url: "https://figma.com", show: false },
+    { go: "📚 前往", img: "/img/sunshine.jpg", title: "MDN", subtitle: "前端开发文档", text: "Mozilla 出品的权威 Web 技术文档，开发者必备。", url: "https://developer.mozilla.org", show: false },
+    { go: "🎵 前往", img: "/img/sunshine.jpg", title: "QQ音乐", subtitle: "听我想听的歌", text: "随时随地，想听就听。", url: "https://y.qq.com", show: false },
+    { go: "🌸 前往", img: "/img/sunshine.jpg", title: "Pixiv", subtitle: "插画创作社区", text: "来自世界各地画师的精彩作品，总有一幅击中你。", url: "https://pixiv.net", show: false },
+    { go: "🍿 前往", img: "/img/sunshine.jpg", title: "哔哩哔哩", subtitle: "干杯～", text: "弹幕视频网站，总有你感兴趣的内容。", url: "https://bilibili.com", show: false },
+    { go: "🗺️ 前往", img: "/img/sunshine.jpg", title: "Notion", subtitle: "笔记与效率工具", text: "把你的想法、计划、笔记都整理在一起。", url: "https://notion.so", show: false },
+    { go: "✨ 前往", img: "/img/sunshine.jpg", title: "Claude", subtitle: "AI 助手", text: "有什么不懂的，来问我吧。", url: "https://claude.ai", show: false },
+],
 
-	statement: ["备案号：XXICP备123456789号", "Copyright © 2025 Leleo"],
+	statement: ["Copyright © 2025 liminal"],
 }
 
 export default config
