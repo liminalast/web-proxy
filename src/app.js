@@ -335,5 +335,9 @@ export default {
     collapseSwitch() {
       this.isExpanded = false;
     },
+    showContact(type, value) {
+      navigator.clipboard.writeText(value).catch(() => {});
+      alert(`${type} 号：${value}\n\n已复制到剪贴板 `);
+    },
   }
 };

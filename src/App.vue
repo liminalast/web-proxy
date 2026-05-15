@@ -77,12 +77,22 @@
                 <v-container class="leleo-left-socialIconsContainer">
                     <v-row align="center" justify="center">
                     <v-col class="pa-1" cols="auto" v-for="item in socialPlatformIcons">
-                        <v-btn :size="xs?25:33" variant="tonal" color="var(--leleo-vcard-color)"
-                        class="ma-1 leleo-social-bticon"
-                        icon
+                    <!-- QQ或微信：点击弹窗 -->
+                      <v-btn v-if="item.qq || item.wechat"
+                        :size="xs?25:33" variant="tonal" color="var(--leleo-vcard-color)"
+                        class="ma-1 leleo-social-bticon" icon
+                        @click="showContact(item.qq ? 'QQ' : '微信', item.qq || item.wechat)"
+                      >
+                        <v-icon :icon=item.icon :size="xs?20:25" class="social-bticon-icon"></v-icon>
+                      </v-btn>
+                      <!-- 普通链接 -->
+                      <v-btn v-else
+                        :size="xs?25:33" variant="tonal" color="var(--leleo-vcard-color)"
+                        class="ma-1 leleo-social-bticon" icon
                         :href="item.link" target="_blank"
-                        >
-                    <v-icon :icon=item.icon :size="xs?20:25" class="social-bticon-icon"></v-icon></v-btn>
+                      >
+                        <v-icon :icon=item.icon :size="xs?20:25" class="social-bticon-icon"></v-icon>
+                      </v-btn>
                     </v-col>
                     </v-row>
 
@@ -116,10 +126,10 @@
     </div>
 
     <v-dialog
-        v-model="dialog1"
-        width="1000"
-        heihght="700"
-      >
+        v-model="dialog1" :width="xs ? '95vw' : 1000">
+
+
+      
       <v-card elevation="3" style="backdrop-filter: blur(10px);">
         <v-tabs
           v-model="tab"

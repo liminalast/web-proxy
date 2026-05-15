@@ -202,15 +202,19 @@ export default {
         this.wallpaperPIC = this.configdata.wallpaper.pic;
         this.wallpaperVD = this.configdata.wallpaper.video;
         this.radios.title = "请选择壁纸";
+
+        if (this.smAndDown) {
+        this.switchType('mobile', 'static');
+    }
     },
     watch: {
         tab(val) {
-            this.type = 'pc';
-            this.itemsPerPage = 6;
+            this.type = this.smAndDown ? 'mobile' : 'pc';
+            this.itemsPerPage = this.smAndDown ? 8 : 6;
             if(val == 'tab-1'){
-                this.wallpaperPIC = this.configdata.wallpaper.pic;
+                this.wallpaperPIC = this.smAndDown ? this.configdata.wallpaper.picMobile : this.configdata.wallpaper.pic;
             }else{
-                this.wallpaperVD = this.configdata.wallpaper.video;
+                this.wallpaperVD = this.smAndDown ? this.configdata.wallpaper.videoMobile : this.configdata.wallpaper.video;
             }
         }
     },
@@ -266,7 +270,7 @@ export default {
             this.loading2 = true
             setTimeout(() => {
                 this.loading = false;
-                this.setCookie('leleodatabackground', this.background,0.005);
+                this.setCookie('leleodatabackground', this.background,30);
                 location.reload();
             }, 800)   
         },
