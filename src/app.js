@@ -107,13 +107,13 @@ export default {
           });
           
           // 等待所有图片加载完成或超时
-          Promise.race([Promise.all(imagePromises), timeoutPromise]).then(()=>{
+          Promise.race([Promise.all(imagePromises), timeoutPromise]).catch(()=>{resolve()}).then(()=>{
             if(imageurl){
               const img = new Image();
               img.src = imageurl;
               // resolve() 函数通将一个 Promise 对象从未完成状态转变为已完成状态
               img.onload = () => {resolve();};
-              img.onerror = (err) => {reject(err);};
+              img.onerror = () => resolve();
             }else{
               const video = this.$refs.VdPlayer;
               video.onloadedmetadata = () => {
