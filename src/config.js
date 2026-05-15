@@ -53,10 +53,10 @@ const config = {
 
 	//社交按钮
 	socialPlatformIcons: [
-		{ icon: "mdi-github", link: "https://github.com/liminalast" },
-    	{ icon: "mdi-qqchat", link: "https://wpa.qq.com/msgrd?v=3&uin=1158429178&site=qq&menu=yes" },
+    	{ icon: "mdi-github", link: "https://github.com/liminalast" },
+    	{ icon: "mdi-qqchat", link: "javascript:void(0)", qq: "1158429178" },
     	{ icon: "mdi-wechat", link: "javascript:void(0)", wechat: "z1158429178" },
-	],
+],
 
 	//打字机
 	typeWriterStrings: [
@@ -135,14 +135,14 @@ const config = {
 
 	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
 projectcards: [
-    { go: "🚀 前往", img: "/img/sunshine.jpg", title: "GitHub", subtitle: "代码托管平台", text: "全球最大的开源社区，存放你的每一行代码。", url: "https://github.com", show: false },
-    { go: "🎨 前往", img: "/img/sunshine.jpg", title: "Figma", subtitle: "在线设计工具", text: "简洁强大的 UI 设计工具，协作设计从未如此简单。", url: "https://figma.com", show: false },
-    { go: "📚 前往", img: "/img/sunshine.jpg", title: "MDN", subtitle: "前端开发文档", text: "Mozilla 出品的权威 Web 技术文档，开发者必备。", url: "https://developer.mozilla.org", show: false },
-    { go: "🎵 前往", img: "/img/sunshine.jpg", title: "QQ音乐", subtitle: "听我想听的歌", text: "随时随地，想听就听。", url: "https://y.qq.com", show: false },
-    { go: "🌸 前往", img: "/img/sunshine.jpg", title: "Pixiv", subtitle: "插画创作社区", text: "来自世界各地画师的精彩作品，总有一幅击中你。", url: "https://pixiv.net", show: false },
-    { go: "🍿 前往", img: "/img/sunshine.jpg", title: "哔哩哔哩", subtitle: "干杯～", text: "弹幕视频网站，总有你感兴趣的内容。", url: "https://bilibili.com", show: false },
-    { go: "🗺️ 前往", img: "/img/sunshine.jpg", title: "Notion", subtitle: "笔记与效率工具", text: "把你的想法、计划、笔记都整理在一起。", url: "https://notion.so", show: false },
-    { go: "✨ 前往", img: "/img/sunshine.jpg", title: "Claude", subtitle: "AI 助手", text: "有什么不懂的，来问我吧。", url: "https://claude.ai", show: false },
+    { go: "🚀 前往", img: "/img/1.jpg", title: "GitHub", subtitle: "代码托管平台", text: "全球最大的开源社区，存放你的每一行代码。", url: "https://github.com", show: false },
+    { go: "🎨 前往", img: "/img/2.jpg", title: "Figma", subtitle: "在线设计工具", text: "简洁强大的 UI 设计工具，协作设计从未如此简单。", url: "https://figma.com", show: false },
+    { go: "📚 前往", img: "/img/3.jpg", title: "MDN", subtitle: "前端开发文档", text: "Mozilla 出品的权威 Web 技术文档，开发者必备。", url: "https://developer.mozilla.org", show: false },
+    { go: "🎵 前往", img: "/img/4.jpg", title: "QQ音乐", subtitle: "听我想听的歌", text: "随时随地，想听就听。", url: "https://y.qq.com", show: false },
+    { go: "🌸 前往", img: "/img/5.jpg", title: "Pixiv", subtitle: "插画创作社区", text: "来自世界各地画师的精彩作品，总有一幅击中你。", url: "https://pixiv.net", show: false },
+    { go: "🍿 前往", img: "/img/6.jpg", title: "哔哩哔哩", subtitle: "干杯～", text: "弹幕视频网站，总有你感兴趣的内容。", url: "https://bilibili.com", show: false },
+    { go: "🗺️ 前往", img: "/img/7.jpg", title: "Notion", subtitle: "笔记与效率工具", text: "把你的想法、计划、笔记都整理在一起。", url: "https://notion.so", show: false },
+    { go: "✨ 前往", img: "/img/8.jpg", title: "Claude", subtitle: "AI 助手", text: "有什么不懂的，来问我吧。", url: "https://claude.ai", show: false },
 ],
 
 	statement: ["Copyright © 2025 liminal"],
